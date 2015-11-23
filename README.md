@@ -1,9 +1,9 @@
 MPLABX Travis CI Example
 ========================
 [![License MIT][badge-license]][license]
-[![Travis build status][badge-travis]][travis]
+[![Travis build status][badge-travis]][travis-build]
 
-Example of a MPLABX project with automatic build on Travis CI.
+Example of a MPLABX project with automatic build on [Travis CI][travis-ci].
 
 Documentation
 =============
@@ -56,6 +56,7 @@ The license can be found in the `LICENSE` file.
 [badge-license]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: https://github.com/vidavidorra/MPLABX_Travis-CI_example.X/blob/master/LICENSE
 [badge-travis]: https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X.svg?branch=master
-[travis]: https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X
+[travis-build]: https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X
+[travis-ci]: https://travis-ci.org
 [travis-log]: https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X/builds/92781353
 [travis-docs]: https://docs.travis-ci.com
