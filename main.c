@@ -5,7 +5,7 @@
  * 
  *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
  * 
- * Copyright (c) 2015 Jeroen de Bruijn <vidavidorra@gmail.com>
+ * Copyright (c) 2015 Jeroen de Bruijn
  * 
  * This file is part of MPLABX_Travis-CI_Example which is released under the
  * MIT License (MIT).

@@ -5,6 +5,17 @@ MPLABX Travis CI Example
 
 Example of a MPLABX project with automatic build on Travis CI.
 
+Documentation
+=============
+This MPLAB X project is automatically build on Travis CI.
+To accomplish this it needs the MPLAB X IDE and the XC16 compiler. In this
+documentation I will explain how Travis CI builds this project.
+
+### Travis.yml script
+Info about travis script.
+
+### Install dependencies script
+Info about install dependencies script.
 
 
 Licensing
