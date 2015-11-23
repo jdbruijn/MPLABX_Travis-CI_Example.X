@@ -18,6 +18,9 @@
                    displayName="Important Files"
                    projectFiles="false">
       <itemPath>Makefile</itemPath>
+      <itemPath>README.md</itemPath>
+      <itemPath>travis-install-dependencies.sh</itemPath>
+      <itemPath>.travis.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
