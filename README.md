@@ -18,6 +18,33 @@ The software packages are downloaded to a new directory one level below the curr
 To install these software packages automatically the command line argument `--mode unattended` is used, so no user input is needed in the installation.
 For the installation of the MPLAB XC16 Compiler a argument called `netservername` is required, but it does not matter what the netservername is. I use the netservername `dontknow` in my scripts.
 
+### Generate makefiles script
+This script is called by the `.travis.yml` script.  
+It is a Linux shell script that comes with the MPLAB X IDE and it generates makefiles without the need of starting the IDE. So it's way less processor expensive than starting the IDE, and so reducing the build time.
+The help of this script is shown below. Currently only the `project_path` argument is given to the script so it generates makefiles for all the build configurations.  
+
+```
+$ /opt/microchip/mplabx/v3.15/mplab_ide/bin/prjMakefilesGenerator.sh -help
+No project has been specified. There should be at least one. Nothing to do.
+
+
+Invalid arguments. Usage is:
+prjMakefilesGenerator [-help] [-v] [-mplabx-userdir=<path>] [project_path[@config_name]*]+ 
+	<project_path>         - path to the MPLAB-X project in the file system
+	[config_name]          - (optional) name of a build configuration to generate the makefile for.
+	                         If missing, the makefiles are generated for all the build configurations.
+
+	-help                  - displays this help screen.
+	-v                     - verbose processing.
+	-mplabx-userdir=<path> - the MPLAB-X user directory (useful if you run MPLAB-X with --userdir).
+
+	Example: prjMakefilesGenerator /home/usr/prj1@default@custom /home/usr/prj2 /home/usr/prj3@xc16
+	The tool will generate the makefiles for:
+	  1.	The configurations named 'default' and 'custom' of the project named 'prj1'
+	  2.	All the configurations of the project named 'prj2' (all because none in particular is specified)
+	  3.	The configuration named 'xc16' of the project named 'prj3'
+```
+
 ### Travis script
 This script is called by the Travis CI server.  
 Information about how this script works can be found in the [Travis CI Documentation][travis-docs].
