@@ -2,6 +2,17 @@
 #
 # Install the software needed for a build.
 #
+#*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+# 
+# Copyright (c) 2015 Jeroen de Bruijn
+# 
+# This file is part of MPLABX_Travis-CI_Example which is released under the
+# MIT License (MIT).
+# For full license details see file "LICENSE" or go to
+# https://opensource.org/licenses/MIT
+#
+#*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
+#
 # Downloads the software from Microchip and saves them in a folder outside
 # of the project directory. Than extracts and installs them.
 # 
