@@ -36,7 +36,7 @@ sudo ./MPLABX-v3.15-linux-installer.sh -- --mode unattended
 echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
 echo "- Installation of MPLAB X IDE v3.15 finished... -"
 echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
-echo "
+echo 
 
 ### Compiler
 # Install MPLAB XC16 Compiler v1.25
@@ -56,7 +56,7 @@ sudo ./xc16-v1.25-full-install-linux-installer.run --mode unattended --netserver
 echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
 echo "- Installation of MPLAB XC16 Compiler v1.25 finished... -"
 echo "-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
-echo "
+echo 
 
 # Return to the saved working directory
 popd
