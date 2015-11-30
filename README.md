@@ -9,7 +9,10 @@ Documentation
 =============
 This MPLAB X project is automatically build on Travis CI.
 To accomplish this it needs the MPLAB X IDE and the MPLAB XC16 compiler.  
-In this documentation I will explain how Travis CI builds this project.
+In this documentation I will explain how to set up a repository for Travis CI and how it builds this project.
+
+### Set up repository for Travis CI
+In order to set up a repository of a MPLAB X project for automatic builds on Travis CI the `.travis.yml` and `travis-install-dependencies.sh` scripts need to be present in the repository. Examples of those scripts can be found in this repository. Once those files are present in the repository, Travis CI needs to know that it has to build a project. More information on how to setup a repository with Travis CI can be found in their [Getting Started Docs][travis-getstarted].
 
 ### Install dependencies script
 This script is called by the `.travis.yml` script.  
@@ -20,7 +23,7 @@ For the installation of the MPLAB XC16 Compiler a argument called `netservername
 
 ### Generate makefiles script
 This script is called by the `.travis.yml` script.  
-It is a Linux shell script that comes with the MPLAB X IDE and it generates makefiles without the need of starting the IDE. So it's way less processor expensive than starting the IDE, and so reducing the build time.
+It is a Linux shell script that comes with the Microchip's MPLAB X IDE and it generates makefiles without the need of starting the IDE. So it's way less processor expensive than starting the IDE, and so reducing the build time.
 The help of this script is shown below. Currently only the `project_path` argument is given to the script so it generates makefiles for all the build configurations.  
 
 ```
@@ -46,10 +49,10 @@ prjMakefilesGenerator [-help] [-v] [-mplabx-userdir=<path>] [project_path[@confi
 ```
 
 ### Travis script
-This script is called by the Travis CI server.  
+This script is called by the Travis CI build server.  
 Information about how this script works can be found in the [Travis CI Documentation][travis-docs].
 The additional packages that are installed in this example are shown below. These are all packages needed by either the MPLAB X IDE or the MPLAB XC16 Compiler.  
-Before the installation of the software packages starts the `travis-install-dependencies` script is made executable. After this a file named `prjMakefilesGenerator.sh` is executed. This is a file, provided by Microchip, that generates the makefiles without the need of starting the IDE, which would consume a lot more time. That script is part of the MPLAB X IDE, so basically a IDE of over 500 MB is downloaded just for a small script. I need to do a bit of testing to see if it would be possible to download (and install) just the needed files for that script, which would probably reduce the time needed for the build dramatically.
+Before the installation of the software packages starts the `travis-install-dependencies.sh` script is made executable. After this a file named `prjMakefilesGenerator.sh` is executed. This is a file, provided by Microchip, that generates the makefiles without the need of starting the IDE, which would consume a lot more time. That script is part of the MPLAB X IDE, so basically a IDE of over 500 MB is downloaded just for a small script. I need to do a bit of testing to see if it would be possible to download (and install) just the needed files for that script, which would probably reduce the time needed for the build dramatically.
 
 ### Build
 The build lasts for about two minutes, depending on the workload and the download speed of the servers.
@@ -79,11 +82,13 @@ MPLABX Travis CI Example is free software, released under the [MIT license](http
 Modification and redistribution are permitted according to the terms of the MIT license.
 The license can be found in the `LICENSE` file.
 
+[Pull requests](https://github.com/vidavidorra/MPLABX_Travis-CI_Example.X/pulls) and [bug reports](https://github.com/vidavidorra/MPLABX_Travis-CI_Example.X/issues) are welcome!
 
 [badge-license]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: https://github.com/vidavidorra/MPLABX_Travis-CI_example.X/blob/master/LICENSE
 [badge-travis]: https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X.svg?branch=master
 [travis-build]: https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X
 [travis-ci]: https://travis-ci.org
+[travis-getstarted]: https://docs.travis-ci.com/user/getting-started
 [travis-log]: https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X/builds/92781353
 [travis-docs]: https://docs.travis-ci.com
