@@ -84,11 +84,12 @@ The license can be found in the `LICENSE` file.
 
 [Pull requests](https://github.com/vidavidorra/MPLABX_Travis-CI_Example.X/pulls) and [bug reports](https://github.com/vidavidorra/MPLABX_Travis-CI_Example.X/issues) are welcome!
 
-[badge-license]: https://img.shields.io/badge/license-MIT-blue.svg
-[license]: https://github.com/vidavidorra/MPLABX_Travis-CI_example.X/blob/master/LICENSE
-[badge-travis]: https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X.svg?branch=master
-[travis-build]: https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X
-[travis-ci]: https://travis-ci.org
-[travis-getstarted]: https://docs.travis-ci.com/user/getting-started
-[travis-log]: https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X/builds/92781353
-[travis-docs]: https://docs.travis-ci.com
+
+[badge-license]:            https://img.shields.io/badge/license-MIT-blue.svg
+[license]:                  https://github.com/vidavidorra/MPLABX_Travis-CI_example.X/blob/master/LICENSE
+[badge-travis]:             https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X.svg?branch=master
+[travis-build]:             https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X
+[travis-ci]:                https://travis-ci.org
+[travis-getstarted]:        https://docs.travis-ci.com/user/getting-started
+[travis-log]:               https://travis-ci.org/vidavidorra/MPLABX_Travis-CI_Example.X/builds/92781353
+[travis-docs]:              https://docs.travis-ci.com
